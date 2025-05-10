@@ -10,24 +10,34 @@ export default function BlogIndex() {
   useEffect(() => {
     Promise.all(
       postSlugs.map((slug) =>
-        fetch(`${process.env.PUBLIC_URL}/posts/${slug}.md`).then((r) =>
-          r.text()
-        )
+        fetch(`./posts/${slug}.md`)
+          .then((res) => {
+            if (!res.ok) throw new Error(`Failed to fetch ${slug}.md`);
+            return res.text();
+          })
+          .then((text) => {
+            const { data } = matter(text);
+            return {
+              title: data.title || slug,
+              date: data.date || "Unknown date",
+              excerpt: data.excerpt || "No excerpt provided.",
+              slug,
+            };
+          })
+          .catch((err) => {
+            console.error(`Error loading post '${slug}':`, err);
+            return null;
+          })
       )
-    ).then((texts) => {
-      const parsed = texts.map((t, i) => {
-        const { data } = matter(t);
-        return {
-          ...data,
-          slug: postSlugs[i],
-        };
-      });
-
-      setPosts(parsed);
+    ).then((results) => {
+      const filtered = results.filter((post) => post !== null);
+      setPosts(filtered);
     });
   }, []);
 
-  if (posts.length === 0) return <p className="p-8">Loading…</p>;
+  if (posts.length === 0) {
+    return <p className="p-8 text-neutral-500">Loading…</p>;
+  }
 
   return (
     <main className="container mx-auto p-8">
