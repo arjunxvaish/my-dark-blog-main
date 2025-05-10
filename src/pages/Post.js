@@ -9,7 +9,7 @@ export default function Post() {
   const [meta, setMeta] = useState(null);
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/posts/${slug.toLowerCase()}.md`)
+    fetch(`./posts/${slug.toLowerCase()}.md`)
       .then((r) => {
         if (!r.ok) throw new Error("Post not found");
         return r.text();
