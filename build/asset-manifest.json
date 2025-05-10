@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/my-dark-blog-main/static/css/main.602a15b6.css",
-    "main.js": "/my-dark-blog-main/static/js/main.4032accc.js",
+    "main.js": "/my-dark-blog-main/static/js/main.fc03752d.js",
     "index.html": "/my-dark-blog-main/index.html",
     "main.602a15b6.css.map": "/my-dark-blog-main/static/css/main.602a15b6.css.map",
-    "main.4032accc.js.map": "/my-dark-blog-main/static/js/main.4032accc.js.map"
+    "main.fc03752d.js.map": "/my-dark-blog-main/static/js/main.fc03752d.js.map"
   },
   "entrypoints": [
     "static/css/main.602a15b6.css",
-    "static/js/main.4032accc.js"
+    "static/js/main.fc03752d.js"
   ]
 }
