@@ -17,7 +17,7 @@ const blogPosts = [
     title: "Uncertainty Hits Home",
     slug: "len",
     excerpt: "Housing doesn’t need to crash. It just has to guide soft. Playing it with a tight earnings put spread.",
-    date: "Mar 21, 2025",
+    date: "Mar 12, 2025",
   },
 ];
 
