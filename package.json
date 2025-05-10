@@ -2,7 +2,7 @@
   "name": "my-dark-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://arjunxvaish.github.io/my-dark-blog",
+  "homepage": "https://arjunxvaish.github.io/my-dark-blog-main",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
