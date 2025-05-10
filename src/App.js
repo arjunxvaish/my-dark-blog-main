@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Strategies from "./pages/Strategies";
 import BlogIndex from "./pages/BlogIndex";
@@ -27,7 +27,7 @@ export default function App() {
   }, [lastScrollY]);
 
   return (
-    <BrowserRouter>
+    <Router>
       <header
         className={`border-b border-neutral-800 fixed w-full bg-black transition-transform duration-300 z-50 ${
           showNav ? "translate-y-0" : "-translate-y-full"
@@ -51,6 +51,6 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
