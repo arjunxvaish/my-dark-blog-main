@@ -1,64 +1,50 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import matter from "gray-matter";
 
-const postSlugs = ["taiwan", "gm", "len"];
+const blogPosts = [
+  {
+    title: "Taiwan's FX Time Bomb",
+    slug: "taiwan",
+    excerpt: "A surging TWD, $1.7T in USD exposure, and global flow reversals spell trouble for dollar dominance.",
+    date: "May 10, 2025",
+  },
+  {
+    title: "Trouble on the Lot",
+    slug: "gm",
+    excerpt: "Auto tariffs, weak sentiment, and global risk stack up. Short-duration put spread for May.",
+    date: "Apr 28, 2025",
+  },
+  {
+    title: "Uncertainty Hits Home",
+    slug: "len",
+    excerpt: "Housing doesn’t need to crash. It just has to guide soft. Playing it with a tight earnings put spread.",
+    date: "Mar 21, 2025",
+  },
+];
 
 export default function BlogIndex() {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    Promise.all(
-      postSlugs.map((slug) =>
-        fetch(`./posts/${slug}.md`)
-          .then((res) => {
-            if (!res.ok) throw new Error(`Failed to fetch ${slug}.md`);
-            return res.text();
-          })
-          .then((text) => {
-            const { data } = matter(text);
-            return {
-              title: data.title || slug,
-              date: data.date || "Unknown date",
-              excerpt: data.excerpt || "No excerpt provided.",
-              slug,
-            };
-          })
-          .catch((err) => {
-            console.error(`Error loading post '${slug}':`, err);
-            return null;
-          })
-      )
-    ).then((results) => {
-      const filtered = results.filter((post) => post !== null);
-      setPosts(filtered);
-    });
-  }, []);
-
-  if (posts.length === 0) {
-    return <p className="p-8 text-neutral-500">Loading…</p>;
-  }
-
   return (
-    <main className="container mx-auto p-8">
-      <h1 className="text-2xl font-semibold mb-8">Blog</h1>
-
-      <div className="flex flex-col gap-6">
-        {posts.map((p) => (
-          <Link
-            key={p.slug}
-            to={`/blog/${p.slug}`}
-            className="flex flex-col border-b border-neutral-800 pb-6 hover:bg-neutral-900/40 transition-colors"
-          >
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <h2 className="text-xl font-semibold">{p.title}</h2>
-              <span className="mt-2 md:mt-0 text-sm text-neutral-500">
-                {p.date}
-              </span>
-            </div>
-            <p className="mt-2 text-neutral-400">{p.excerpt}</p>
-          </Link>
-        ))}
+    <main className="min-h-screen bg-black text-white px-4 py-12">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-3xl font-bold mb-10">Blog</h1>
+        <div className="flex flex-col gap-8">
+          {blogPosts.map((post) => (
+            <Link
+              key={post.slug}
+              to={`/blog/${post.slug}`}
+              className="block group"
+            >
+              <div className="border-b border-neutral-800 pb-6 group-hover:bg-neutral-900/40 px-4 py-2 rounded-lg transition duration-200">
+                <h2 className="text-xl font-semibold group-hover:text-white mb-1">
+                  {post.title}
+                </h2>
+                <p className="text-neutral-400 text-sm mb-2">
+                  {post.excerpt}
+                </p>
+                <p className="text-neutral-600 text-xs">{post.date}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </main>
   );

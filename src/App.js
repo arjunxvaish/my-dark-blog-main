@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Strategies from "./pages/Strategies";
 import BlogIndex from "./pages/BlogIndex";
-import Post from "./pages/Post";
+import Taiwan from "./pages/Taiwan";
+import GM from "./pages/GM";
+import LEN from "./pages/LEN";
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -13,9 +15,9 @@ export default function App() {
     const handleScroll = () => {
       const current = window.scrollY;
       if (current < lastScrollY) {
-        setShowNav(true); // scrolling up
+        setShowNav(true);
       } else if (current > lastScrollY + 10) {
-        setShowNav(false); // scrolling down
+        setShowNav(false);
       }
       setLastScrollY(current);
     };
@@ -32,15 +34,9 @@ export default function App() {
         }`}
       >
         <nav className="container mx-auto flex items-center justify-center sm:justify-start gap-6 p-4">
-          <Link to="/" className="text-white font-semibold">
-            Home
-          </Link>
-          <Link to="/strategies" className="text-white hover:text-teal-400">
-            Strategies
-          </Link>
-          <Link to="/blog" className="text-white hover:text-teal-400">
-            Blog
-          </Link>
+          <Link to="/" className="text-white font-semibold">Home</Link>
+          <Link to="/strategies" className="text-white hover:text-teal-400">Strategies</Link>
+          <Link to="/blog" className="text-white hover:text-teal-400">Blog</Link>
         </nav>
       </header>
 
@@ -49,7 +45,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/strategies" element={<Strategies />} />
           <Route path="/blog" element={<BlogIndex />} />
-          <Route path="/blog/:slug" element={<Post />} />
+          <Route path="/blog/taiwan" element={<Taiwan />} />
+          <Route path="/blog/gm" element={<GM />} />
+          <Route path="/blog/len" element={<LEN />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
