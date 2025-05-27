@@ -6,6 +6,7 @@ import BlogIndex from "./pages/BlogIndex";
 import Taiwan from "./pages/Taiwan";
 import GM from "./pages/GM";
 import LEN from "./pages/LEN";
+import Recession from "./pages/Recession"; // <-- Added this line
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -48,6 +49,7 @@ export default function App() {
           <Route path="/blog/taiwan" element={<Taiwan />} />
           <Route path="/blog/gm" element={<GM />} />
           <Route path="/blog/len" element={<LEN />} />
+          <Route path="/blog/recession" element={<Recession />} /> {/* <-- Added this route */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

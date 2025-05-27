@@ -2,6 +2,12 @@ import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
+    title: "Recession Risk: Delayed, Not Gone",
+    slug: "recession",
+    excerpt: "Markets rallied, tariffs paused—but under the surface, consumers, bonds, and delinquencies tell a darker story.",
+    date: "May 17, 2025",
+  },
+  {
     title: "Taiwan's FX Time Bomb",
     slug: "taiwan",
     excerpt: "A surging TWD, $1.7T in USD exposure, and global flow reversals spell trouble for dollar dominance.",
