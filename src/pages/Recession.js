@@ -9,7 +9,7 @@ export default function Recession() {
           <h2>Here’s the setup:</h2>
           <p>145% China tariffs were paused—reduced to around 30–45% depending on category. But this isn’t resolution, it’s delay. Deals are still on the table, and the risk clock is still ticking. Equity markets have posted one of the sharpest year-to-date rallies in recent history. But while price action looks euphoric, the macro backdrop looks anything but.</p>
   
-          <p>We’re still staring down <strong>$15 trillion in U.S. debt</strong> that needs refinancing. Bond yields are down, but not because confidence is up—because demand is weakening. That’s not a bullish signal. It's a symptom.</p>
+          <p>We’re still staring down <strong>$15 trillion in U.S. debt</strong> that needs refinancing.</p>
   
           <h2>The Consumer Is Struggling</h2>
           <p>Loan delinquencies are climbing fast. Student loan defaults jumped from zero to 6–8% within just weeks of repayments restarting. And the burden isn’t shared evenly—middle and lower income households are carrying the brunt. Real income expectations are falling, sentiment is low, and spending is starting to roll over in discretionary categories.</p>
