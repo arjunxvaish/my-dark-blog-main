@@ -4,11 +4,13 @@ export default function Home() {
   const IMG = process.env.PUBLIC_URL;
 
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="bg-black text-white">
       {/* ------------ main content ------------ */}
-      <main className="container mx-auto flex flex-col md:flex-row items-start gap-16 px-4 md:px-8 py-16">
-        {/* intro column */}
-        <section className="max-w-4xl sm:max-w-5xl text-balance">
+      <main
+        className="container mx-auto px-4 md:px-8 pt-10 flex flex-col justify-between"
+        style={{ minHeight: "calc(100vh - 64px)" }} // Adjust header height here
+      >
+        <section className="max-w-4xl sm:max-w-5xl">
           <h1 className="text-4xl font-bold tracking-tight">
             Trading Strategies &amp; Notes
           </h1>
@@ -40,40 +42,33 @@ export default function Home() {
           </p>
         </section>
 
-        {/* right column (placeholder) */}
-        <aside className="flex-1 hidden md:flex items-center justify-center">
-          {/* add a hero image, animation, or KPI cards here later */}
-        </aside>
-      </main>
+        {/* ------------ footer ------------ */}
+        <footer className="w-full pb-6 mt-10">
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex items-center gap-10">
+              <a
+                href="mailto:arjunvaish22@gmail.com"
+                className="flex items-center gap-3 hover:text-teal-300"
+              >
+                <img src={`${IMG}/gmail.png`} alt="gmail icon" className="h-6 w-6" />
+                arjunvaish22@gmail.com
+              </a>
 
-      {/* ------------ footer ------------ */}
-      <footer className="w-full pb-6">
-        <div className="flex flex-col items-center gap-4">
-          {/* contact row */}
-          <div className="flex items-center gap-10">
-            <a
-              href="mailto:arjunvaish22@gmail.com"
-              className="flex items-center gap-3 hover:text-teal-300"
-            >
-              <img src={`${IMG}/gmail.png`} alt="" className="h-6 w-6" />
-              arjunvaish22@gmail.com
-            </a>
+              <a
+                href="https://www.linkedin.com/in/arjun-vaish"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-teal-300"
+              >
+                <img src={`${IMG}/linkedin.png`} alt="linkedin icon" className="h-6 w-6" />
+                LinkedIn
+              </a>
+            </div>
 
-            <a
-              href="https://www.linkedin.com/in/arjun-vaish"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 hover:text-teal-300"
-            >
-              <img src={`${IMG}/linkedin.png`} alt="" className="h-6 w-6" />
-              LinkedIn
-            </a>
+            <p className="text-xs text-neutral-600">© 2025 Arjun Vaish</p>
           </div>
-
-          {/* copyright */}
-          <p className="text-xs text-neutral-600">© 2025 Arjun Vaish</p>
-        </div>
-      </footer>
+        </footer>
+      </main>
     </div>
   );
 }

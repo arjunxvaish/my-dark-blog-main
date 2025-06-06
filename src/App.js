@@ -6,7 +6,9 @@ import BlogIndex from "./pages/BlogIndex";
 import Taiwan from "./pages/Taiwan";
 import GM from "./pages/GM";
 import LEN from "./pages/LEN";
-import Recession from "./pages/Recession"; // <-- Added this line
+import Recession from "./pages/Recession";
+import Services from "./pages/Services"; // ✅ Services macro view
+import PMI from "./pages/PMI";           // ✅ PMI-focused with NVDA/CAT
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -46,10 +48,12 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/strategies" element={<Strategies />} />
           <Route path="/blog" element={<BlogIndex />} />
+          <Route path="/blog/services" element={<Services />} /> {/* ✅ Macro blog */}
+          <Route path="/blog/pmi" element={<PMI />} />           {/* ✅ NVDA/CAT blog */}
           <Route path="/blog/taiwan" element={<Taiwan />} />
           <Route path="/blog/gm" element={<GM />} />
           <Route path="/blog/len" element={<LEN />} />
-          <Route path="/blog/recession" element={<Recession />} /> {/* <-- Added this route */}
+          <Route path="/blog/recession" element={<Recession />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
