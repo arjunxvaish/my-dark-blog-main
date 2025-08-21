@@ -53,16 +53,6 @@ export default function Home() {
                 <img src={`${IMG}/gmail.png`} alt="gmail icon" className="h-6 w-6" />
                 arjunvaish22@gmail.com
               </a>
-
-              <a
-                href="https://www.linkedin.com/in/arjun-vaish"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-teal-300"
-              >
-                <img src={`${IMG}/linkedin.png`} alt="linkedin icon" className="h-6 w-6" />
-                LinkedIn
-              </a>
             </div>
 
             <p className="text-xs text-neutral-600">© 2025 Arjun Vaish</p>

@@ -9,6 +9,9 @@ import LEN from "./pages/LEN";
 import Recession from "./pages/Recession";
 import Services from "./pages/Services"; // ✅ Services macro view
 import PMI from "./pages/PMI";           // ✅ PMI-focused with NVDA/CAT
+import Energy from "./pages/Energy";
+import QuantLeague from "./pages/QuantLeague";
+import JulyMacro from "./pages/JulyMacro";
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -54,7 +57,11 @@ export default function App() {
           <Route path="/blog/gm" element={<GM />} />
           <Route path="/blog/len" element={<LEN />} />
           <Route path="/blog/recession" element={<Recession />} />
+          <Route path="/blog/quant-league" element={<QuantLeague />} />
           <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/blog/energy" element={<Energy />} />
+          <Route path="/blog/julymacro" element={<JulyMacro />} />
+
         </Routes>
       </div>
     </Router>

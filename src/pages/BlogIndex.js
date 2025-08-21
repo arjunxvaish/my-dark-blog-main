@@ -2,6 +2,26 @@ import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
+    title: "Energy: Cracks Beneath the Surface",
+    slug: "energy",
+    excerpt:
+      "Momentum flipped to neutral, demand is softening, and seasonality bites—energy’s tailwind just turned into a headwind.",
+    date: "Aug 16, 2025",
+  },
+  {
+    title: "July Macro Check: PMI Strength, New Orders, And An Uncertain Tape",
+    slug: "julymacro",
+    excerpt:
+      "PMI held firm, new orders led, tariffs sparked a relief rally, and earnings risk stayed elevated. Neutral stance into reports.",
+    date: "Jul 14, 2025",
+  },
+  {
+    title: "First Place in QuantConnect Quant League",
+    slug: "quant-league",
+    excerpt: "How I built a systematic model that secured first place in QuantConnect's global competition.",
+    date: "Jul 4, 2025",
+  },  
+  {
     title: "Services Slowdown: Beneath the Surface",
     slug: "services",
     excerpt: "New orders fell, prices surged, and inventories misaligned—beneath the surface, services are breaking down.",
