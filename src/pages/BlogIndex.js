@@ -2,17 +2,30 @@ import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
+    title: "Europe’s Debt Squeeze: Why France Matters",
+    slug: "europe",
+    excerpt:
+      "Slow growth high debt and rising borrowing costs are creating a new flashpoint in Europe France is at the center.",
+    date: "Sep 10, 2025",
+  },
+  {
+    title: "Global Investments Return Summary 2025",
+    slug: "ubs",
+    excerpt: "UBS Yearbook 2025 in plain English: 125 years of returns diversification inflation factors and why the long run is really long.",
+    date: "Sep 7, 2025",
+  },
+  {
     title: "Energy: Cracks Beneath the Surface",
     slug: "energy",
     excerpt:
-      "Momentum flipped to neutral, demand is softening, and seasonality bites—energy’s tailwind just turned into a headwind.",
+      "Momentum flipped to neutral demand is softening and seasonality bites energy’s tailwind just turned into a headwind.",
     date: "Aug 16, 2025",
   },
   {
-    title: "July Macro Check: PMI Strength, New Orders, And An Uncertain Tape",
+    title: "July Macro Check: PMI Strength New Orders And An Uncertain Tape",
     slug: "julymacro",
     excerpt:
-      "PMI held firm, new orders led, tariffs sparked a relief rally, and earnings risk stayed elevated. Neutral stance into reports.",
+      "PMI held firm new orders led tariffs sparked a relief rally and earnings risk stayed elevated. Neutral stance into reports.",
     date: "Jul 14, 2025",
   },
   {
@@ -24,31 +37,31 @@ const blogPosts = [
   {
     title: "Services Slowdown: Beneath the Surface",
     slug: "services",
-    excerpt: "New orders fell, prices surged, and inventories misaligned—beneath the surface, services are breaking down.",
+    excerpt: "New orders fell prices surged and inventories misaligned beneath the surface services are breaking down.",
     date: "Jun 6, 2025",
   },
   {
     title: "PMI Breaks Below 50",
     slug: "pmi",
-    excerpt: "ISM shows contraction in services. Watch new orders, sticky prices, and what this means for NVDA and CAT.",
+    excerpt: "ISM shows contraction in services. Watch new orders sticky prices and what this means for NVDA and CAT.",
     date: "Jun 5, 2025",
   },
   {
-    title: "Recession Risk: Delayed, Not Gone",
+    title: "Recession Risk: Delayed Not Gone",
     slug: "recession",
-    excerpt: "Markets rallied, tariffs paused—but under the surface, consumers, bonds, and delinquencies tell a darker story.",
+    excerpt: "Markets rallied tariffs paused but under the surface consumers bonds and delinquencies tell a darker story.",
     date: "May 17, 2025",
   },
   {
     title: "Taiwan's FX Time Bomb",
     slug: "taiwan",
-    excerpt: "A surging TWD, $1.7T in USD exposure, and global flow reversals spell trouble for dollar dominance.",
+    excerpt: "A surging TWD $1.7T in USD exposure and global flow reversals spell trouble for dollar dominance.",
     date: "May 10, 2025",
   },
   {
     title: "Trouble on the Lot",
     slug: "gm",
-    excerpt: "Auto tariffs, weak sentiment, and global risk stack up. Short-duration put spread for May.",
+    excerpt: "Auto tariffs weak sentiment and global risk stack up. Short duration put spread for May.",
     date: "Apr 28, 2025",
   },
   {

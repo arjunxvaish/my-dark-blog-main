@@ -33,13 +33,13 @@ export default function Strategies() {
         backtest={{ from: "2005-01-01", to: "2025-01-31" }}
         equity={equitySeries}
         metrics={{
-          "Start Capital": "$1 M",
-          "Net Profit": "$79 M",
-          "Total Return": "7956 %",
-          CAGR: "24 %",
+          "Start Capital": "$1 M",
+          "Net Profit": "$79 M",
+          "Total Return": "7956 %",
+          CAGR: "24 %",
           Sharpe: "0.68",
         }}
-        aboutText={`This strategy fades short‑term dips in SPXL when the broader market trend is up. Entry triggers when price sits below the 10‑day SMA but above the 150‑day SMA **and** the MACD histogram is rising while still negative (momentum turning). It exits after a quick $10 pop or a $50 stop‑loss. Position sizing is all‑in to keep the back‑test simple.`}
+        aboutText={`This strategy fades short-term dips in SPXL when the broader market trend is up. Entry triggers when price sits below the 10-day SMA but above the 150-day SMA **and** the MACD histogram is rising while still negative (momentum turning). It exits after a quick $10 pop or a $50 stop-loss. Position sizing is all-in to keep the back-test simple.`}
         code={STRATEGY_CODE}
       />
     </main>
@@ -131,7 +131,7 @@ function StrategyCard({ title, backtest, equity, metrics, aboutText, code }) {
         </ResponsiveContainer>
       </div>
 
-      {/* metrics — now flexbox */}
+      {/* metrics  now flexbox */}
       <dl className="mt-6 flex flex-wrap justify-between gap-y-4 text-sm">
         {Object.entries(metrics).map(([k, v]) => (
           <div key={k} className="min-w-[120px]">

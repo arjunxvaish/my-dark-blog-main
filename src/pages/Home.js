@@ -16,11 +16,11 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 text-lg text-neutral-400 leading-relaxed">
-            This site tracks <strong>back‑tested strategies</strong> I created using
-            QuantConnect. Each card shows the equity curve, key stats, and lets
-            you copy the full Python code.{" "}
+            This site tracks <strong>back tested strategies</strong> I created using
+            QuantConnect. Each card shows the equity curve key stats and lets
+            you copy the full Python code{" "}
             <Link to="/strategies" className="text-teal-400 hover:underline">
-              View the strategies →
+              View the strategies &gt;
             </Link>
           </p>
 
@@ -29,7 +29,7 @@ export default function Home() {
             <Link to="/blog" className="text-teal-400 hover:underline">
               blog
             </Link>
-            . For everything else, check my{" "}
+            . For everything else check my{" "}
             <a
               href="https://arjunxvaish.github.io/arjun-site/"
               target="_blank"

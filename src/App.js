@@ -12,6 +12,8 @@ import PMI from "./pages/PMI";           // ✅ PMI-focused with NVDA/CAT
 import Energy from "./pages/Energy";
 import QuantLeague from "./pages/QuantLeague";
 import JulyMacro from "./pages/JulyMacro";
+import Europe from "./pages/Europe";
+import UBS from "./pages/UBS";
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -61,6 +63,8 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/blog/energy" element={<Energy />} />
           <Route path="/blog/julymacro" element={<JulyMacro />} />
+          <Route path="/blog/europe" element={<Europe />} />
+          <Route path="/blog/ubs" element={<UBS />} />
 
         </Routes>
       </div>
