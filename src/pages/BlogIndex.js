@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 
 const blogPosts = [
+
+  {
+    title: "One Headline One Payoff: The NEM Gold Trade",
+    slug: "nem",
+    excerpt:
+      "Powell goes dovish NEM runs 16% in 20 sessions. A 104/107 May call spread paid roughly 7 to 1 on the debit.",
+    date: "Apr 18, 2026",
+  },
+  
   {
     title: "Europe’s Debt Squeeze: Why France Matters",
     slug: "europe",

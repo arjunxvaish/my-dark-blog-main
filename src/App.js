@@ -14,6 +14,7 @@ import QuantLeague from "./pages/QuantLeague";
 import JulyMacro from "./pages/JulyMacro";
 import Europe from "./pages/Europe";
 import UBS from "./pages/UBS";
+import NEM from "./pages/NEM";
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -53,8 +54,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/strategies" element={<Strategies />} />
           <Route path="/blog" element={<BlogIndex />} />
-          <Route path="/blog/services" element={<Services />} /> {/* ✅ Macro blog */}
-          <Route path="/blog/pmi" element={<PMI />} />           {/* ✅ NVDA/CAT blog */}
+          <Route path="/blog/services" element={<Services />} /> 
+          <Route path="/blog/pmi" element={<PMI />} />           
           <Route path="/blog/taiwan" element={<Taiwan />} />
           <Route path="/blog/gm" element={<GM />} />
           <Route path="/blog/len" element={<LEN />} />
@@ -65,6 +66,7 @@ export default function App() {
           <Route path="/blog/julymacro" element={<JulyMacro />} />
           <Route path="/blog/europe" element={<Europe />} />
           <Route path="/blog/ubs" element={<UBS />} />
+          <Route path="/blog/nem" element={<NEM />} />
 
         </Routes>
       </div>
