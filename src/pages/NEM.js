@@ -78,28 +78,13 @@ export default function NEM() {
           Defined loss defined reward.
         </p>
   
-        <h3 className="text-xl font-semibold">The Fill</h3>
-        <p>
-          Entered 3/30/2026 on the May 1 expiry. Bought the 104 call sold the 107 call.
-          Roughly 32 DTE a $3 wide structure.
-        </p>
-  
         <div className="my-6">
           <img
             src={`${process.env.PUBLIC_URL}/NEMconf.png`}
             alt="NEM 104/107 May 1 call spread trade confirmation"
             className="rounded-xl shadow-md border border-neutral-800"
           />
-          <p className="text-sm text-neutral-500 mt-2">
-            Trade confirmation. Long 104C short 107C May 1 expiry.
-          </p>
         </div>
-  
-        <p>
-          Defined risk is the net debit paid. Max payout is the $3 spread width. On the
-          move that followed the structure paid roughly <strong>7 to 1</strong> on the
-          debit.
-        </p>
   
         <h2 className="text-2xl font-bold">Standing Where the Domino Falls</h2>
         <p>
@@ -123,7 +108,7 @@ export default function NEM() {
         <p>
           Wrong on buy and hold you lose 10%. Right you make 10 maybe 30 on a great
           move. Wrong on a defined-risk call spread you lose 100% of a small premium.
-          Right you make 7 to 1 or better.
+          If  right, you make a killing.
         </p>
         <p>
           The bag holder problem isn't bad picks. It's no defined risk no convexity and

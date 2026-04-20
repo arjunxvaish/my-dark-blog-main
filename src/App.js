@@ -15,6 +15,9 @@ import JulyMacro from "./pages/JulyMacro";
 import Europe from "./pages/Europe";
 import UBS from "./pages/UBS";
 import NEM from "./pages/NEM";
+import GSG from "./pages/GSG";
+import CENX from "./pages/CENX";
+import VIX from "./pages/VIX";
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -67,6 +70,9 @@ export default function App() {
           <Route path="/blog/europe" element={<Europe />} />
           <Route path="/blog/ubs" element={<UBS />} />
           <Route path="/blog/nem" element={<NEM />} />
+          <Route path="/blog/gsg" element={<GSG />} />
+          <Route path="/blog/cenx" element={<CENX />} />
+          <Route path="/blog/vix" element={<VIX />} />
 
         </Routes>
       </div>

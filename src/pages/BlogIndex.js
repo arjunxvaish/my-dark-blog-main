@@ -3,13 +3,37 @@ import { Link } from "react-router-dom";
 const blogPosts = [
 
   {
+    title: "Long Vol Into the Stack: Why the VIX Trade Is the Cleanest EV on the Board",
+    slug: "vix",
+    excerpt:
+      "Three catalysts in four weeks. Compressed vol. Calendar-stacked naked calls not spreads not ETFs. A structural read not a directional one.",
+    date: "Apr 20, 2026",
+  },
+
+  {
+    title: "Thesis Right Tape Wrong: The GSG Commodity Trade",
+    slug: "gsg",
+    excerpt:
+      "Hot inflation commodities ripping. Waited for the pullback bought a defined-risk call spread. Then headlines hit. A process-over-outcome post.",
+    date: "Apr 14, 2026",
+  },
+
+  {
     title: "One Headline One Payoff: The NEM Gold Trade",
     slug: "nem",
     excerpt:
       "Powell goes dovish NEM runs 16% in 20 sessions. A 104/107 May call spread paid roughly 7 to 1 on the debit.",
-    date: "Apr 18, 2026",
+    date: "Apr 13, 2026",
   },
-  
+
+  {
+    title: "The CENX Aluminum Trade: Thesis Entry Math",
+    slug: "cenx",
+    excerpt:
+      "PMI strong primary metals leading analyst revisions up. A $5 wide call spread on the highest-beta pure-play aluminum name. Setup vehicle and structure.",
+    date: "Apr 01, 2026",
+  },
+
   {
     title: "Europe’s Debt Squeeze: Why France Matters",
     slug: "europe",
@@ -17,6 +41,7 @@ const blogPosts = [
       "Slow growth high debt and rising borrowing costs are creating a new flashpoint in Europe France is at the center.",
     date: "Sep 10, 2025",
   },
+
   {
     title: "Global Investments Return Summary 2025",
     slug: "ubs",
