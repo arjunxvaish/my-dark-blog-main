@@ -18,6 +18,8 @@ import NEM from "./pages/NEM";
 import GSG from "./pages/GSG";
 import CENX from "./pages/CENX";
 import VIX from "./pages/VIX";
+import HawkishCut from "./pages/HawkishCut";
+import Rally from "./pages/Rally";
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -73,6 +75,8 @@ export default function App() {
           <Route path="/blog/gsg" element={<GSG />} />
           <Route path="/blog/cenx" element={<CENX />} />
           <Route path="/blog/vix" element={<VIX />} />
+          <Route path="/blog/hawkish-cut" element={<HawkishCut />} />
+          <Route path="/blog/rally" element={<Rally />} />
 
         </Routes>
       </div>

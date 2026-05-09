@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 const blogPosts = [
 
   {
+    title: "Rosy Tape, Hollow Engine",
+    slug: "rally",
+    excerpt:
+      "S&P up 8% on the year tech leading hard. The screener says concentrated the earnings chart says fragile and tail hedges are on sale. A 30-second read of the tape.",
+    date: "May 8, 2026",
+  },
+
+  {
     title: "Long Vol Into the Stack: Why the VIX Trade Is the Cleanest EV on the Board",
     slug: "vix",
     excerpt:
@@ -32,6 +40,14 @@ const blogPosts = [
     excerpt:
       "PMI strong primary metals leading analyst revisions up. A $5 wide call spread on the highest-beta pure-play aluminum name. Setup vehicle and structure.",
     date: "Apr 01, 2026",
+  },
+
+  {
+    title: "Action Dovish Language Hawkish: Reading the October Fed Meeting",
+    slug: "hawkish-cut",
+    excerpt:
+      "The Fed cut ended QT and sounded hawkish anyway. Front end ripped dollar firmed gold reversed $80. A walkthrough of how to read a Fed meeting cross-asset.",
+    date: "Oct 30, 2025",
   },
 
   {

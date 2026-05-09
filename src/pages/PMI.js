@@ -11,9 +11,7 @@ export default function PMI() {
         <h2>Why It Matters</h2>
         <p>This isn’t a soft patch it’s a signal. Inventory levels are dropping export demand is fading (<strong>New Export Orders: 40.1</strong>) and imports cratered to <strong>39.9</strong>. These are forward indicators and they’re all red.</p>
 
-        <p>If manufacturing was recovering you’d see it in new orders and trade flows. But this PMI says the opposite: industrial demand is stalling hard.</p>
-
-        <h2>The Trade: Long NVDA Short CAT</h2>
+        <h2>The Trade: Long NVDA</h2>
         <p>This is about structure not direction. Take advantage of market skew.</p>
 
         <p><strong>NVDA:</strong> Still leading on AI narrative. Use a <strong>30 DTE call vertical</strong> with tight caps and long 20–30 delta calls. Keeps risk defined while capturing upside momentum.</p>
@@ -25,8 +23,6 @@ export default function PMI() {
         />
 
         <p>Sentiment is hot but momentum hasn’t rolled. Stay long with structure not leverage.</p>
-
-        <p><strong>CAT:</strong> Industrials don’t like this PMI. Demand capex exports all fading. CAT is tied to the macro and late-cycle heavy machinery. When growth fades this gets hit.</p>  
       </article>
     </div>
   );
