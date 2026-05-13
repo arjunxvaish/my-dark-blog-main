@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 const blogPosts = [
 
   {
+    title: "The Market That Won't Break",
+    slug: "tape",
+    excerpt:
+      "CPI beat across the board. Rates sold off hard. HYG dumped. SPX closed green anyway. The divergence is the whole story.",
+    date: "May 12, 2026",
+  },
+
+  {
     title: "Rosy Tape, Hollow Engine",
     slug: "rally",
     excerpt:
       "S&P up 8% on the year tech leading hard. The screener says concentrated the earnings chart says fragile and tail hedges are on sale. A 30-second read of the tape.",
     date: "May 8, 2026",
-  },
-
-  {
-    title: "Long Vol Into the Stack: Why the VIX Trade Is the Cleanest EV on the Board",
-    slug: "vix",
-    excerpt:
-      "Three catalysts in four weeks. Compressed vol. Calendar-stacked naked calls not spreads not ETFs. A structural read not a directional one.",
-    date: "Apr 20, 2026",
   },
 
   {
@@ -64,13 +64,7 @@ const blogPosts = [
     excerpt: "UBS Yearbook 2025 in plain English: 125 years of returns diversification inflation factors and why the long run is really long.",
     date: "Sep 7, 2025",
   },
-  {
-    title: "Energy: Cracks Beneath the Surface",
-    slug: "energy",
-    excerpt:
-      "Momentum flipped to neutral demand is softening and seasonality bites energy’s tailwind just turned into a headwind.",
-    date: "Aug 16, 2025",
-  },
+  
   {
     title: "July Macro Check: PMI Strength New Orders And An Uncertain Tape",
     slug: "julymacro",

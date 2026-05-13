@@ -9,7 +9,6 @@ import LEN from "./pages/LEN";
 import Recession from "./pages/Recession";
 import Services from "./pages/Services"; // ✅ Services macro view
 import PMI from "./pages/PMI";           // ✅ PMI-focused with NVDA/CAT
-import Energy from "./pages/Energy";
 import QuantLeague from "./pages/QuantLeague";
 import JulyMacro from "./pages/JulyMacro";
 import Europe from "./pages/Europe";
@@ -17,9 +16,9 @@ import UBS from "./pages/UBS";
 import NEM from "./pages/NEM";
 import GSG from "./pages/GSG";
 import CENX from "./pages/CENX";
-import VIX from "./pages/VIX";
 import HawkishCut from "./pages/HawkishCut";
 import Rally from "./pages/Rally";
+import Tape from "./pages/Tape";
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -67,16 +66,15 @@ export default function App() {
           <Route path="/blog/recession" element={<Recession />} />
           <Route path="/blog/quant-league" element={<QuantLeague />} />
           <Route path="*" element={<Navigate to="/" replace />} />
-          <Route path="/blog/energy" element={<Energy />} />
           <Route path="/blog/julymacro" element={<JulyMacro />} />
           <Route path="/blog/europe" element={<Europe />} />
           <Route path="/blog/ubs" element={<UBS />} />
           <Route path="/blog/nem" element={<NEM />} />
           <Route path="/blog/gsg" element={<GSG />} />
           <Route path="/blog/cenx" element={<CENX />} />
-          <Route path="/blog/vix" element={<VIX />} />
           <Route path="/blog/hawkish-cut" element={<HawkishCut />} />
           <Route path="/blog/rally" element={<Rally />} />
+          <Route path="/blog/tape" element={<Tape />} />
 
         </Routes>
       </div>
