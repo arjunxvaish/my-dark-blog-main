@@ -19,6 +19,10 @@ import CENX from "./pages/CENX";
 import HawkishCut from "./pages/HawkishCut";
 import Rally from "./pages/Rally";
 import Tape from "./pages/Tape";
+import DotPlot from "./pages/DotPlot";
+import PeakHikes from "./pages/PeakHikes";
+import LowVolRally from "./pages/LowVolRally";
+import StocksStillCheap from "./pages/StocksStillCheap";
 
 export default function App() {
   const [showNav, setShowNav] = useState(true);
@@ -75,7 +79,11 @@ export default function App() {
           <Route path="/blog/hawkish-cut" element={<HawkishCut />} />
           <Route path="/blog/rally" element={<Rally />} />
           <Route path="/blog/tape" element={<Tape />} />
-
+          <Route path="/blog/dotplot" element={<DotPlot />} />
+          <Route path="/blog/peakhikes" element={<PeakHikes />} />
+          <Route path="/blog/lowvolrally" element={<LowVolRally />} />
+          <Route path="/blog/stocksstillcheap" element={<StocksStillCheap />} />
+          
         </Routes>
       </div>
     </Router>

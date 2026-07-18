@@ -3,6 +3,22 @@ import { Link } from "react-router-dom";
 const blogPosts = [
 
   {
+    title: "The Dot Plot Divergence: Why the Front End Isn't Buying the Cuts",
+    slug: "dotplot",
+    excerpt:
+      "Fed's median sees cuts ahead. Futures aren't pricing it. The gap between the dots and the curve is the whole trade.",
+    date: "Jul 9, 2026",
+  },
+
+  {
+    title: "Oil Crashes, Yields Roll Over: Reading the Setup Into Wednesday's Fed",
+    slug: "peakhikes",
+    excerpt:
+      "Oil short, yields breaking, front end cracking neutral. Three signals into the June FOMC, no prediction attached.",
+    date: "Jun 15, 2026",
+  },
+
+  {
     title: "The Market That Won't Break",
     slug: "tape",
     excerpt:
@@ -51,6 +67,14 @@ const blogPosts = [
   },
 
   {
+    title: "Stay Invested, Buy the Convexity: Reading a Low-Vol Rally",
+    slug: "lowvolrally",
+    excerpt:
+      "Big rally, almost no volatility. What that combination means, what's crowded vs. what's actually positioned, and how to hedge cheap.",
+    date: "Oct 10, 2025",
+  },
+
+  {
     title: "Europe’s Debt Squeeze: Why France Matters",
     slug: "europe",
     excerpt:
@@ -63,6 +87,14 @@ const blogPosts = [
     slug: "ubs",
     excerpt: "UBS Yearbook 2025 in plain English: 125 years of returns diversification inflation factors and why the long run is really long.",
     date: "Sep 7, 2025",
+  },
+
+  {
+    title: "Long Stocks, Long Dollar, Long Carry: Reading the Post-FOMC Setup",
+    slug: "stocksstillcheap",
+    excerpt:
+      "Fed holds, two dissenters want cuts. One-time tariff drag vs. a 2026 credit boom setup. Why stocks still look cheap top-down.",
+    date: "Aug 2, 2025",
   },
   
   {
